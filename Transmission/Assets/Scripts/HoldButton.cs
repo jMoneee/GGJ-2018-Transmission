@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class StartButton : MonoBehaviour {
+public class HoldButton : MonoBehaviour {
 
 	public Button yourButtonH;
 
