@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour {
 
+	public Button yourButton;
+
 	// Use this for initialization
 	void Start () {
-		
+		Button btn = yourButton.GetComponent<Button> ();
+		btn.onClick.AddListener (TaskOnClick);
 	}
 	
 	// Update is called once per frame
@@ -17,8 +20,7 @@ public class StartButton : MonoBehaviour {
 		
 	}
 	void TaskOnClick(){
-		SceneManager.LoadScene("Main", LoadSceneMode.Single);
-		SceneManager.SetActiveScene ("Main");
+		SceneManager.LoadScene(1, LoadSceneMode.Single);
 	}
 
 
