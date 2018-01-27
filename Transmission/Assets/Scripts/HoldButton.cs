@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HoldButton : MonoBehaviour {
 
-	public Button yourButtonH;
+	public Button yourButton;
 
 	// Use this for initialization
 	void Start () {
