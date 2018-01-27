@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class StartButton : MonoBehaviour {
 
-	public Button yourButton;
+	public Button yourButtonA;
 
 	// Use this for initialization
 	void Start () {
