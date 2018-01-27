@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class AreaButton : MonoBehaviour {
 
-	public Button yourButtonA;
+	public Button yourButton;
 
 	// Use this for initialization
 	void Start () {

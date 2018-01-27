@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CableButton : MonoBehaviour {
 
-	public Button yourButtonC;
+	public Button yourButton;
 
 	// Use this for initialization
 	void Start () {

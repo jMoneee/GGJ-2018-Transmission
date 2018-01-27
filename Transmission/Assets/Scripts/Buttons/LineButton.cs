@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class LineButton : MonoBehaviour {
 
-	public Button yourButtonS;
+	public Button yourButton;
 	public int lineNum;
-	string buttonName = "Line" + lineNum;
+
 	// Use this for initialization
 	void Start () {
 		Button btn = yourButton.GetComponent<Button> ();
