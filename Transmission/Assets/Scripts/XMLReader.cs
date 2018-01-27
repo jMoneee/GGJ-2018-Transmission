@@ -13,7 +13,7 @@ public class XMLReader : MonoBehaviour {
 		TextAsset txtXmlAsset = Resources.Load<TextAsset> (dialogueFile);
 		var doc = XDocument.Parse (txtXmlAsset.text);
 
-		var allDialogue = doc.Element ("Script").Elements ("Script");
+		var allDialogue = doc.Elements ("Script");
 
 		foreach (var oneDialogue in allDialogue) {
 			var dialogue = oneDialogue.Elements ("dialogue");
@@ -33,14 +33,13 @@ public class XMLReader : MonoBehaviour {
 		TextAsset txtXmlAsset = Resources.Load<TextAsset> ("EventTimes");
 		var doc = XDocument.Parse (txtXmlAsset.text);
 
-		var allTimes = doc.Elements ("time");
+		var allTimes = doc.Elements ("EventTimes");
 
 		foreach (var oneDialogue in allTimes) {
-			var time = oneDialogue.Elements ("dialogue");
+			var time = oneDialogue.Elements ("time");
 			XElement element = time.ElementAt (0);
-			string replaced = element.ToString ().Replace ("<time>", "").Replace ("</time>", "");
 
-			timeList.Add (replaced);
+			timeList.Add ((float) element);
 		}
 
 		return timeList;
