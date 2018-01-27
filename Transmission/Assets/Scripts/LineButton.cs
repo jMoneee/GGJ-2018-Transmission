@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class StartButton : MonoBehaviour {
 
-	public Button yourButton;
+	public Button yourButtonS;
 	public int lineNum;
 	string buttonName = "Line" + lineNum;
 	// Use this for initialization
