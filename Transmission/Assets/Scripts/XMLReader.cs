@@ -19,7 +19,7 @@ public class XMLReader : MonoBehaviour {
 		TextAsset txtXmlAsset = Resources.Load<TextAsset> (dialogueFile);
 		var doc = XDocument.Parse (txtXmlAsset.text);
 
-		var allDialogue = doc.Elements ("Scripts");
+		var allDialogue = doc.Element ("Scripts").Elements("dialogue");
 
 		foreach (var oneDialogue in allDialogue) {
 			var dialogue = oneDialogue.Elements ("dialogue");

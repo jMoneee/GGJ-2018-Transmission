@@ -1,9 +1,13 @@
 <?xml version="1.0"?>
 <Scripts>
 	<dialogue> 
-			Hey I need you to patch me in
+		<dialogue>
+Hey I need you to patch me in
+		</dialogue>
 	</dialogue>
 	<dialogue> 
-			Yo, I am talking about some very important stuff right now
+		<dialogue>
+Yo, I am talking about some very important stuff right now
+		</dialogue>
 	</dialogue>
 </Scripts>
