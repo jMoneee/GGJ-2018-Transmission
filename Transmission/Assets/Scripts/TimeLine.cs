@@ -28,7 +28,6 @@ public class TimeLine : MonoBehaviour {
 
 		connect = GameObject.FindGameObjectWithTag ("GameController").GetComponent<CableConnections>();
 		dialogues = xmlReader.readDialogue ("Event Dialogue");
-		//display.Display (dialogues[1]);
 
 
 		for (int x = 0; x < 4; x++) {
@@ -44,6 +43,7 @@ public class TimeLine : MonoBehaviour {
 
 	void checkTime()
 	{
+		Debug.Log ("TimeLeft: " + timeLeft + " eventTime: " + eventTime [timeIndex] * 60 + " timeIndex: " + timeIndex);
 		if (timeLeft < eventTime [timeIndex] * 60) {
 			StartCoroutine (Call(timeIndex));
 			if (timeIndex < eventTime.Count) {
@@ -79,5 +79,11 @@ public class TimeLine : MonoBehaviour {
 			yield return null;
 		}
 		display.Display (dialogues [timeIndex]);
+	}
+
+	public void StawpDialogue()
+	{
+		StopAllCoroutines ();
+		display.RemoveText ();
 	}
 }

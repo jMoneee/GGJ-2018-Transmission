@@ -19,11 +19,13 @@ public class CableConnections : MonoBehaviour {
 	public bool firstCable;
 	public bool firstArea;
 	public bool hasConnection;
+	public TimeLine timeLine;
 
 	GameObject cableParent;
 
 	void Start()
 	{
+		hasConnection = false;
 		firstCable = false;
 		firstArea = false;
 		cableIndex = -1;
@@ -58,12 +60,17 @@ public class CableConnections : MonoBehaviour {
 		if (cableOccupy [cableIndex].Equals(areaOccupy [areaIndex])){
 			if ((cableOccupy[cableIndex] == true && firstArea == true) || (cableOccupy[cableIndex] == false && firstCable == true && hold[cableIndex] == true)) {
 				cables [cableIndex, areaIndex].SetActive (!cables [cableIndex, areaIndex].gameObject.activeSelf);
-				cableImages [cableIndex].SetActive (!cableImages [cableIndex].gameObject.activeSelf);
+				//cableImages [cableIndex].SetActive (!cableImages [cableIndex].gameObject.activeSelf);
 				cableOccupy [cableIndex] = !cableOccupy [cableIndex];
 				areaOccupy [areaIndex] = !areaOccupy [areaIndex];
+
 				hasConnection = !hasConnection;
 			}
+			if (hasConnection == false) {
+				timeLine.StawpDialogue ();
+			}
 		}
+
 		cableIndex = -1;
 		areaIndex = -1;
 		firstCable = false;
