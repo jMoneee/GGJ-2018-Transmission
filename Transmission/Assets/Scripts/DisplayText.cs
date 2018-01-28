@@ -35,8 +35,12 @@ public class DisplayText : MonoBehaviour {
 	IEnumerator placeCharacters(string dialogue)
 	{
 		foreach (char letter in dialogue.ToCharArray()) {
-			dialogueBox.text += letter;
-			yield return new WaitForSeconds (delay);
+			if (letter == '~') {
+				dialogueBox.text = "";
+			} else {
+				dialogueBox.text += letter;
+				yield return new WaitForSeconds (delay);
+			}
 		}
 	}
 
