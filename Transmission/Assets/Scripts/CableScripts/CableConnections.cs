@@ -30,9 +30,10 @@ public class CableConnections : MonoBehaviour {
 		
 	public void ToggleConnection()
 	{
+		Debug.Log (cables [cableIndex, areaIndex].gameObject.activeSelf);
 		cableIndex -= 1;
 		areaIndex -= 1;
-		cables [cableIndex, areaIndex].SetActive (true);
+		cables [cableIndex, areaIndex].SetActive (!cables[cableIndex, areaIndex].gameObject.activeSelf);
 		cableIndex = -1;
 		areaIndex = -1;
 	}
