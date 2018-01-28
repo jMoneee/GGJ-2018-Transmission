@@ -4,8 +4,14 @@ using UnityEngine;
 using System.Xml.Linq;
 using System.Linq;
 
+/*
+ * Class to read the XML Files
+ */
 public class XMLReader : MonoBehaviour {
 
+	/*
+	 * Method to read each dialogue xml
+	 */
 	public List<string> readDialogue(string dialogueFile)
 	{
 		List<string> dialogueList = new List<string> ();
@@ -26,6 +32,9 @@ public class XMLReader : MonoBehaviour {
 		return dialogueList;
 	}
 
+	/*
+	 * Method to read the event times
+	 */
 	public List<float> readEventTime()
 	{
 		List<float> timeList = new List<float> ();
