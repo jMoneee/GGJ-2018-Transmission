@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SelectArea : MonoBehaviour {
 
+	public int areaIndex;
 	CableConnections connect;
-	LineRenderer line;
 
 	void Start()
 	{
@@ -19,34 +19,11 @@ public class SelectArea : MonoBehaviour {
 	 * This involves setting a new position, forming the line,
 	 * and removing the line
 	 */
-	public void ToggleLine()
+	public void SetAreaPos()
 	{
-		if (connect.cableSelected == true) {
-			AreaPosition ();
+		connect.areaIndex = areaIndex;
+		if (connect.cableIndex != -1 && connect.areaIndex != -1) {
+			connect.ToggleConnection ();
 		}
-		if (connect.cableSelected == true && connect.isConnected == false) {
-			FormLine ();
-		} else if (connect.isConnected == true) {
-			RemoveLine ();
-		}
-	}
-
-	private void AreaPosition()
-	{
-		Vector3 areaPos = new Vector3 (transform.position.x, transform.position.y, 5);
-		connect.areaPos = areaPos;
-	}
-
-	private void FormLine()
-	{
-		connect.MakeLine ();
-		line = connect.line;
-	}
-
-	private void RemoveLine()
-	{
-		line.enabled = false;
-		connect.isConnected = false;
-		connect.cableSelected = false;
 	}
 }

@@ -8,25 +8,20 @@ using UnityEngine;
  */
 public class CableConnections : MonoBehaviour {
 
-	public GameObject selectedCable;
-	public Vector3 cablePos;
-	public Vector3 areaPos;
-	public bool cableSelected;
-	public bool isConnected;
-	public LineRenderer line;
+	public int cableIndex;
+	public int areaIndex;
+	public GameObject[,] cables;
 
 	void Start()
 	{
-		cableSelected = false;
-		isConnected = false;
+		cableIndex = -1;
+		areaIndex = -1;
 	}
 		
-	public void MakeLine()
+	public void ToggleConnection()
 	{
-		line = selectedCable.GetComponent<LineRenderer> ();
-		line.enabled = true;
-		line.SetPosition (0, cablePos);
-		line.SetPosition (1, areaPos);
-		isConnected = true;
+		cables [cableIndex, areaIndex].SetActive (!cables[cableIndex, areaIndex].activeSelf);
+		cableIndex = -1;
+		areaIndex = -1;
 	}
 }
