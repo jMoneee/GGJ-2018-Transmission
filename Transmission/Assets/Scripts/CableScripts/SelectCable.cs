@@ -7,7 +7,6 @@ using UnityEngine;
  */
 public class SelectCable : MonoBehaviour {
 
-	public int cableIndex;
 	CableConnections connect;
 
 	void Start()
@@ -17,9 +16,9 @@ public class SelectCable : MonoBehaviour {
 		
 	public void setCablePos()
 	{
-		connect.cableIndex = cableIndex;
-		if (connect.cableIndex != -1 && connect.areaIndex != -1) {
-			connect.ToggleConnection ();
-		}
+		Vector3 cablePos = new Vector3 (transform.position.x, transform.position.y, 5);
+		connect.cablePos = cablePos;
+		connect.selectedCable = this.gameObject;
+		connect.cableSelected = true;
 	}
 }
