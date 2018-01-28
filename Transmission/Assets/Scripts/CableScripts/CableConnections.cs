@@ -18,6 +18,7 @@ public class CableConnections : MonoBehaviour {
 	public bool[] hold = new bool[4];
 	public bool firstCable;
 	public bool firstArea;
+	public bool hasConnection;
 
 	GameObject cableParent;
 
@@ -60,6 +61,7 @@ public class CableConnections : MonoBehaviour {
 				cableImages [cableIndex].SetActive (!cableImages [cableIndex].gameObject.activeSelf);
 				cableOccupy [cableIndex] = !cableOccupy [cableIndex];
 				areaOccupy [areaIndex] = !areaOccupy [areaIndex];
+				hasConnection = !hasConnection;
 			}
 		}
 		cableIndex = -1;

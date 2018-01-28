@@ -28,7 +28,7 @@ public class TimeLine : MonoBehaviour {
 
 		connect = GameObject.FindGameObjectWithTag ("GameController").GetComponent<CableConnections>();
 		dialogues = xmlReader.readDialogue ("Event Dialogue");
-		display.Display (dialogues[2]);
+		//display.Display (dialogues[1]);
 
 
 		for (int x = 0; x < 4; x++) {
@@ -39,13 +39,13 @@ public class TimeLine : MonoBehaviour {
 	void Update()
 	{
 		timeLeft -= Time.deltaTime;
-		//checkTime ();
+		checkTime ();
 	}
 
 	void checkTime()
 	{
 		if (timeLeft < eventTime [timeIndex] * 60) {
-			StartCoroutine (Call(0));
+			StartCoroutine (Call(timeIndex));
 			if (timeIndex < eventTime.Count) {
 				timeIndex++;
 			}
@@ -69,15 +69,15 @@ public class TimeLine : MonoBehaviour {
 	void Answer()
 	{
 		StopAllCoroutines ();
-		display.Display (dialogues [0]);
-		StartCoroutine (waitConnect(0, 3));
+		display.Display ("Hi, can you connect me?");
+		StartCoroutine (waitConnect());
 	}
 
-	IEnumerator waitConnect(int cable, int area)
+	IEnumerator waitConnect()
 	{
-		while (connect.cableOccupy [cable] == false && connect.areaOccupy [cable] == false) {
+		while (connect.hasConnection == false) {
 			yield return null;
 		}
-		display.Display (dialogues [1]);
+		display.Display (dialogues [timeIndex]);
 	}
 }

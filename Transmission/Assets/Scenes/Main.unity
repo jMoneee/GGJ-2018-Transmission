@@ -1589,9 +1589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d771ae826ce6c8a48b3737bffc5eccba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
-  lightOnSprite: {fileID: 21300000, guid: 4426c3cc7388b4b418231066196d1c30, type: 3}
-  lightOffSprite: {fileID: 21300000, guid: 61712b4e6ddbbab48858d5d9079826a2, type: 3}
 --- !u!1 &174643387
 GameObject:
   m_ObjectHideFlags: 0
@@ -8551,9 +8548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d771ae826ce6c8a48b3737bffc5eccba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 1
-  lightOnSprite: {fileID: 21300000, guid: 4426c3cc7388b4b418231066196d1c30, type: 3}
-  lightOffSprite: {fileID: 21300000, guid: 61712b4e6ddbbab48858d5d9079826a2, type: 3}
 --- !u!1 &991188076
 GameObject:
   m_ObjectHideFlags: 0
@@ -8771,9 +8765,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d771ae826ce6c8a48b3737bffc5eccba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 4
-  lightOnSprite: {fileID: 21300000, guid: 4426c3cc7388b4b418231066196d1c30, type: 3}
-  lightOffSprite: {fileID: 21300000, guid: 61712b4e6ddbbab48858d5d9079826a2, type: 3}
 --- !u!1 &1002731028
 GameObject:
   m_ObjectHideFlags: 0
@@ -14940,9 +14931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d771ae826ce6c8a48b3737bffc5eccba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 3
-  lightOnSprite: {fileID: 21300000, guid: 4426c3cc7388b4b418231066196d1c30, type: 3}
-  lightOffSprite: {fileID: 21300000, guid: 61712b4e6ddbbab48858d5d9079826a2, type: 3}
 --- !u!1 &1768755083
 GameObject:
   m_ObjectHideFlags: 0
@@ -15573,9 +15561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d771ae826ce6c8a48b3737bffc5eccba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 2
-  lightOnSprite: {fileID: 21300000, guid: 4426c3cc7388b4b418231066196d1c30, type: 3}
-  lightOffSprite: {fileID: 21300000, guid: 61712b4e6ddbbab48858d5d9079826a2, type: 3}
 --- !u!1 &1820309596
 GameObject:
   m_ObjectHideFlags: 0
@@ -17126,6 +17111,7 @@ MonoBehaviour:
   hold: 00000000
   firstCable: 0
   firstArea: 0
+  hasConnection: 0
 --- !u!114 &2027002255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17137,7 +17123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2da6560bb420e47968622fff42d011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 5
+  minutes: 30
   display: {fileID: 902300608}
   xmlReader: {fileID: 2027002256}
   callTimeSeconds: 10
