@@ -8,9 +8,9 @@ public class FlipSwitch : MonoBehaviour {
 	public int index;
 	public Sprite leftSwitch;
 	public Sprite rightSwitch;
+	public int state;
 
 	CableConnections connect;
-	int state;
 	Image switchImage;
 
 	void Start()
