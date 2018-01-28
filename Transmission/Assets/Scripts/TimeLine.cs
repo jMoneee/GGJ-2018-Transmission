@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Class in control of the game timeline
+ */
 public class TimeLine : MonoBehaviour {
 
 	public float minutes;
+	public DisplayText display;
 
 	float seconds;
 	float[] eventTime;
@@ -12,5 +16,6 @@ public class TimeLine : MonoBehaviour {
 	void Start()
 	{
 		seconds = minutes * 60;
+
 	}
 }
