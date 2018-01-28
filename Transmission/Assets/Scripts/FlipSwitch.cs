@@ -25,12 +25,16 @@ public class FlipSwitch : MonoBehaviour {
 		if (state == 0) {
 			switchImage.sprite = rightSwitch;
 			state = 1;
-			connect.hold [index] = true;
+			if (index != 0) {
+				connect.hold [index - 1] = true;
+			}
 		}
 		else{
 			switchImage.sprite = leftSwitch;
 			state = 0;
-			connect.hold [index] = false;
+			if (index != 0) {
+				connect.hold [index - 1] = false;
+			}
 		}
 	}
 }
