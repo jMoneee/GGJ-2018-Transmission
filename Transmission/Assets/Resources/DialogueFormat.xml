@@ -1,18 +1,9 @@
 <?xml version="1.0"?>
-<DaveScript>
-	<Scripts>
-		<dialogue> 
-			Dave1 says hi
-		</dialogue>
-	</Scripts>
-	<Scripts>
-		<dialogue> 
-			Dave2 says no
-		</dialogue>
-	</Scripts>
-	<Scripts>
-		<dialogue>
-			Dave3 says yes
-		</dialogue>
-	</Scripts>
-</DaveScript>
+<Scripts>
+	<dialogue> 
+			Hey I need you to patch me in
+	</dialogue>
+	<dialogue> 
+			Yo, I am talking about some very important stuff right now
+	</dialogue>
+</Scripts>
