@@ -11,6 +11,8 @@ public class CableConnections : MonoBehaviour {
 	public int cableIndex;
 	public int areaIndex;
 	public GameObject[,] cables = new GameObject[4, 18];
+	public GameObject[] cableImages = new GameObject[4];
+	public GameObject cableImageParent;
 	public bool[] cableOccupy = new bool[4];
 	public bool[] areaOccupy = new bool[18];
 	public bool[] hold = new bool[4];
@@ -34,6 +36,10 @@ public class CableConnections : MonoBehaviour {
 			}
 		}
 
+		for (int image = 0; image < 4; image++) {
+			cableImages [image] = cableImageParent.transform.GetChild (image).gameObject;
+		}
+
 		for (int x = 0; x < 4; x++) {
 			cableOccupy [x] = false;
 			hold [x] = false;
@@ -51,6 +57,7 @@ public class CableConnections : MonoBehaviour {
 		if (cableOccupy [cableIndex].Equals(areaOccupy [areaIndex])){
 			if ((cableOccupy[cableIndex] == true && firstArea == true) || (cableOccupy[cableIndex] == false && firstCable == true && hold[cableIndex] == true)) {
 				cables [cableIndex, areaIndex].SetActive (!cables [cableIndex, areaIndex].gameObject.activeSelf);
+				cableImages [cableIndex].SetActive (!cableImages [cableIndex].gameObject.activeSelf);
 				cableOccupy [cableIndex] = !cableOccupy [cableIndex];
 				areaOccupy [areaIndex] = !areaOccupy [areaIndex];
 			}
