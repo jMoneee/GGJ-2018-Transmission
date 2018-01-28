@@ -22,6 +22,8 @@ public class TimeLine : MonoBehaviour {
 		timeLeft = minutes * 60;
 		timeIndex = 0;
 		eventTime = xmlReader.readEventTime ();
+		testDialogue = xmlReader.readDialogue ("DialogueFormat");
+		display.Display (testDialogue[1]);
 	}
 
 	void Update()
