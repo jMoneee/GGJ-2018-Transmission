@@ -5517,6 +5517,7 @@ GameObject:
   - component: {fileID: 902300605}
   - component: {fileID: 902300607}
   - component: {fileID: 902300606}
+  - component: {fileID: 902300608}
   m_Layer: 5
   m_Name: Dialogue Text
   m_TagString: Untagged
@@ -5583,6 +5584,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 902300604}
+--- !u!114 &902300608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 902300604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27c63965e680cf428b3fdc7f2cb5140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.2
+  dialogueBox: {fileID: 902300606}
 --- !u!1 &906767405
 GameObject:
   m_ObjectHideFlags: 0
@@ -11971,6 +11985,8 @@ GameObject:
   - component: {fileID: 2027002252}
   - component: {fileID: 2027002251}
   - component: {fileID: 2027002254}
+  - component: {fileID: 2027002255}
+  - component: {fileID: 2027002256}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: GameController
@@ -12041,6 +12057,32 @@ MonoBehaviour:
   hold: 00000000
   firstCable: 0
   firstArea: 0
+--- !u!114 &2027002255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2027002250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be2da6560bb420e47968622fff42d011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minutes: 5
+  display: {fileID: 902300608}
+  xmlReader: {fileID: 2027002256}
+  callTimeSeconds: 0
+--- !u!114 &2027002256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2027002250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97381a25c30c1e4409ad1d0e71bcefea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029191110
 GameObject:
   m_ObjectHideFlags: 0
