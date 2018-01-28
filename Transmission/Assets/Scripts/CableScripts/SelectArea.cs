@@ -22,6 +22,11 @@ public class SelectArea : MonoBehaviour {
 	public void SetAreaPos()
 	{
 		connect.areaIndex = areaIndex;
+
+		if (connect.cableIndex == -1) {
+			connect.firstArea = true;
+		}
+
 		if (connect.cableIndex != -1 && connect.areaIndex != -1) {
 			connect.ToggleConnection ();
 		}

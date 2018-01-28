@@ -18,6 +18,11 @@ public class SelectCable : MonoBehaviour {
 	public void setCablePos()
 	{
 		connect.cableIndex = cableIndex;
+
+		if (connect.areaIndex == -1) {
+			connect.firstCable = true;
+		}
+
 		if (connect.cableIndex != -1 && connect.areaIndex != -1) {
 			connect.ToggleConnection ();
 		}
