@@ -42,11 +42,11 @@ public class XMLReader : MonoBehaviour {
 		TextAsset txtXmlAsset = Resources.Load<TextAsset> ("EventTimes");
 		var doc = XDocument.Parse (txtXmlAsset.text);
 
-		var allTimes = doc.Elements ("EventTimes");
+		var allTimes = doc.Element ("EventTimes").Elements("time");
 
 		foreach (var oneDialogue in allTimes) {
 			var time = oneDialogue.Elements ("time");
-			XElement element = time.ElementAt (0);
+			XElement element = time.ElementAt(0);
 
 			timeList.Add ((float) element);
 		}
