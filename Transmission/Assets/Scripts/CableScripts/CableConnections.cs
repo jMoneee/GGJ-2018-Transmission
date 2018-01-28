@@ -13,6 +13,7 @@ public class CableConnections : MonoBehaviour {
 	public GameObject[,] cables = new GameObject[4, 18];
 	public bool[] cableOccupy = new bool[4];
 	public bool[] areaOccupy = new bool[18];
+	public bool[] hold = new bool[4];
 	public bool firstCable;
 	public bool firstArea;
 
@@ -35,6 +36,7 @@ public class CableConnections : MonoBehaviour {
 
 		for (int x = 0; x < 4; x++) {
 			cableOccupy [x] = false;
+			hold [x] = false;
 		}
 
 		for (int x = 0; x < 18; x++) {
@@ -47,9 +49,7 @@ public class CableConnections : MonoBehaviour {
 		cableIndex -= 1;
 		areaIndex -= 1;
 		if (cableOccupy [cableIndex].Equals(areaOccupy [areaIndex])){
-			
-			if ((cableOccupy[cableIndex] == true && firstArea == true) || (cableOccupy[cableIndex] == false && firstCable == true)) {
-				Debug.Log ("Test");
+			if ((cableOccupy[cableIndex] == true && firstArea == true) || (cableOccupy[cableIndex] == false && firstCable == true && hold[cableIndex] == true)) {
 				cables [cableIndex, areaIndex].SetActive (!cables [cableIndex, areaIndex].gameObject.activeSelf);
 				cableOccupy [cableIndex] = !cableOccupy [cableIndex];
 				areaOccupy [areaIndex] = !areaOccupy [areaIndex];

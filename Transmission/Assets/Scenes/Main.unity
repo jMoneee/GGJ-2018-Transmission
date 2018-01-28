@@ -3541,6 +3541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: f324978b5a60f2344a3ec5817b5028e7, type: 3}
   rightSwitch: {fileID: 21300000, guid: bc1bbdb8d8c2d19488b8215098e37dc0, type: 3}
 --- !u!1 &642504190
@@ -4089,6 +4090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: 2b235391b2a12c9469e6b8da1e47e9cd, type: 3}
   rightSwitch: {fileID: 21300000, guid: 1b5227bfea5afb14e8468f1589754df7, type: 3}
 --- !u!1 &727286903
@@ -4435,6 +4437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: f324978b5a60f2344a3ec5817b5028e7, type: 3}
   rightSwitch: {fileID: 21300000, guid: bc1bbdb8d8c2d19488b8215098e37dc0, type: 3}
 --- !u!1 &739821403
@@ -5571,7 +5574,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Dialogue goes here \n"
+  m_Text: 'Make it so that hold has to be off in order to answer call
+
+'
 --- !u!222 &902300607
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5973,6 +5978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: f324978b5a60f2344a3ec5817b5028e7, type: 3}
   rightSwitch: {fileID: 21300000, guid: bc1bbdb8d8c2d19488b8215098e37dc0, type: 3}
 --- !u!1 &953269996
@@ -7128,6 +7134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: 2b235391b2a12c9469e6b8da1e47e9cd, type: 3}
   rightSwitch: {fileID: 21300000, guid: 1b5227bfea5afb14e8468f1589754df7, type: 3}
 --- !u!1 &1059555335
@@ -7535,6 +7542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: 2b235391b2a12c9469e6b8da1e47e9cd, type: 3}
   rightSwitch: {fileID: 21300000, guid: 1b5227bfea5afb14e8468f1589754df7, type: 3}
 --- !u!1 &1083324655
@@ -10564,6 +10572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: 2b235391b2a12c9469e6b8da1e47e9cd, type: 3}
   rightSwitch: {fileID: 21300000, guid: 1b5227bfea5afb14e8468f1589754df7, type: 3}
 --- !u!1 &1794338382
@@ -11745,6 +11754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25689566a99f4e499299fe88ecf8b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   leftSwitch: {fileID: 21300000, guid: f324978b5a60f2344a3ec5817b5028e7, type: 3}
   rightSwitch: {fileID: 21300000, guid: bc1bbdb8d8c2d19488b8215098e37dc0, type: 3}
 --- !u!1 &1956035878
@@ -12028,6 +12038,7 @@ MonoBehaviour:
   areaIndex: 0
   cableOccupy: 00000000
   areaOccupy: 000000000000000000000000000000000000
+  hold: 00000000
   firstCable: 0
   firstArea: 0
 --- !u!1 &2029191110
