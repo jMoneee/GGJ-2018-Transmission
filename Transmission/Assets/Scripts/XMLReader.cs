@@ -19,12 +19,12 @@ public class XMLReader : MonoBehaviour {
 		TextAsset txtXmlAsset = Resources.Load<TextAsset> (dialogueFile);
 		var doc = XDocument.Parse (txtXmlAsset.text);
 
-		var allDialogue = doc.Element ("Scripts").Elements("dialogue");
+		var allDialogue = doc.Element ("DialogueSet").Elements ("scene");
 
 		foreach (var oneDialogue in allDialogue) {
-			var dialogue = oneDialogue.Elements ("dialogue");
+			var dialogue = oneDialogue.Elements ("scene");
 			XElement element = dialogue.ElementAt (0);
-			string replaced = element.ToString ().Replace ("<dialogue>", "").Replace ("</dialogue>", "");
+			string replaced = element.ToString ().Replace ("<scene>", "").Replace ("</scene>", "");
 
 			dialogueList.Add (replaced);
 		}
@@ -39,10 +39,10 @@ public class XMLReader : MonoBehaviour {
 	{
 		List<float> timeList = new List<float> ();
 
-		TextAsset txtXmlAsset = Resources.Load<TextAsset> ("EventTimes");
+		TextAsset txtXmlAsset = Resources.Load<TextAsset> ("Event Times");
 		var doc = XDocument.Parse (txtXmlAsset.text);
 
-		var allTimes = doc.Element ("EventTimes").Elements("time");
+		var allTimes = doc.Element ("EventTimes").Elements ("time");
 
 		foreach (var oneDialogue in allTimes) {
 			var time = oneDialogue.Elements ("time");

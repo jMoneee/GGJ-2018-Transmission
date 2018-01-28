@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- This document stores and parses through the event times, stored in a list. There are 43 Events.-->
+
+<EventTimes>
+  <!--director call 1-->
+  <time><time>
+    30.00
+  </time></time>
+  <time><time>
+    29.00
+  </time></time>
+  <time><time>
+    28.75
+    <!--secretary-govt 1-->
+  </time></time>
+  <time><time>
+    28.25
+    <!--DrF Physicist1-->
+  </time></time>
+  <time><time>
+    28.03
+    <!--testing remote 1-->
+  </time></time>
+  <time><time>
+    27.80
+    <!--Engineering-secretary 1-->
+  </time></time>
+  <time><time>
+    27.20
+    <!--Chief-Govt1-->
+  </time></time>
+  <time><time>
+    26.60
+    <!--DrF-Aleksi 1-->
+  </time></time>
+  <time><time> 
+    25.50
+    <!--secretary-chief 1-->
+  </time></time>
+  <time><time>
+    24.70
+    <!--Director2-->
+  </time></time>
+  <time><time>
+    <!--tester-chief-->
+    24.00
+  </time></time>
+  <time><time>
+    23.70
+    <!--chief-engineer-->
+  </time></time>
+  <time><time>
+    23.20
+    <!--remote-govt-->
+  </time></time>
+  <time><time>
+    22.90
+    <!--testing-secretary-->
+  </time></time>
+  <time><time>
+    22.40
+    <!--government-chief-->
+  </time></time>
+  <time><time>
+    22.00
+    <!--Physicist-drF-->
+  </time></time>
+  <time><time>
+    21.20
+    <!--ChiefSecretary-->
+  </time></time>
+  <time><time>
+    20.90
+    <!--engineer testing-->
+  </time></time>
+  <time><time>
+    20.50
+    <!--Govt-Aleksi-->
+  </time></time>
+  <time><time>
+    20.20
+    <!--DrF-Physicist-->
+  </time></time>
+  <time><time>
+    18.00
+    <!--remote-tester-->
+  </time></time>
+  <time><time>
+    17.70
+    <!--Secretary-Engineer-->
+  </time></time>
+  <time><time>
+    17.00
+    <!--DrFPhysicist-->
+  </time></time>
+  <time><time>
+    16.25
+    <!--Chief-tester-->
+  </time></time>
+  <time><time>
+    15.90
+    <!--Govt-DrF-->
+  </time></time>
+  <time><time>
+    15.50
+    <!--Remote-Secretary-->
+  </time></time>
+  <time><time>
+    15.20
+    <!--govt-aleksi-->
+  </time></time>
+  <time><time>
+    15.05
+    <!--engineer-tester-->
+  </time></time>
+  <time><time>
+    14.80
+    <!--Govt-Chief-->
+  </time></time>
+  <time><time>
+    14.50
+    <!--Tester-Remote-->
+  </time></time>
+  <time><time>
+    14.00
+    <!--Director3-->
+  </time></time>
+  <time><time>
+    12.50
+    <!--Secretary-Chief-->
+  </time></time>
+  <time><time>
+    12.30
+    <!--Govt-Tester-->
+  </time></time>
+  <time><time>
+    12.10
+    <!--Tester-DrF-->
+  </time></time>
+  <time><time>
+    11.90
+    <!--DrF-Aleksi-->
+  </time></time>
+  <time><time>
+    11.85
+    <!--tester-engineer-->
+  </time></time>
+  <time><time>
+    11.40
+    <!--ChiefGovt-->
+  </time></time>
+  <time><time>
+    10.60
+    <!--govtTester-->
+  </time></time>
+  <time><time>
+    10.10
+    <!--Director4-->
+  </time></time>
+  <time><time>
+    09.00
+    <!--TesterEngineer-->
+  </time></time>
+  <time><time>
+    08.00
+    <!--Secretary call-->
+  </time></time>
+  <time><time>
+    07.00
+    <!--lazer tested-->
+  </time></time>
+  <time><time>
+    06.00
+    <!--DrFAleksiEnd-->
+  </time></time>
+  <time><time>
+    04.70
+    <!--END-->
+  </time></time>
+</EventTimes>
