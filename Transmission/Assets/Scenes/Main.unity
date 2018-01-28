@@ -7100,7 +7100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27c63965e680cf428b3fdc7f2cb5140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.2
+  delay: 0.1
   dialogueBox: {fileID: 902300606}
 --- !u!1 &906767405
 GameObject:
