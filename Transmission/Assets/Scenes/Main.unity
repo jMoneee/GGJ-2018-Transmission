@@ -17008,7 +17008,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  cableImageParent: {fileID: 0}
+  cableImageParent: {fileID: 882376771}
   cableOccupy: 00000000
   areaOccupy: 000000000000000000000000000000000000
   hold: 00000000
@@ -17027,8 +17027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minutes: 5
   display: {fileID: 902300608}
-  xmlReader: {fileID: 0}
-  callTimeSeconds: 0
+  xmlReader: {fileID: 2027002256}
+  callTimeSeconds: 10
 --- !u!114 &2027002256
 MonoBehaviour:
   m_ObjectHideFlags: 0

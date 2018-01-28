@@ -32,18 +32,20 @@ public class TimeLine : MonoBehaviour {
 
 	void checkTime()
 	{
-		Debug.Log (timeLeft < eventTime [timeIndex] * 60);
 		if (timeLeft < eventTime [timeIndex] * 60) {
-			
-			StartCoroutine ("Call");
+			StartCoroutine (Call());
+			if (timeIndex < eventTime.Count) {
+				timeIndex++;
+			}
 		}
 	}
 
 	IEnumerator Call(){
-		while (callTimeSeconds > 0) {
-			Debug.Log ("Ring");
-			callTimeSeconds -= Time.deltaTime;
+		float time = callTimeSeconds;
+		while (time > 0) {
+			Debug.Log ("Ring" + time);
+			time -= 1;
+			yield return new WaitForSeconds(1);
 		}
-		yield return null;
 	}
 }
