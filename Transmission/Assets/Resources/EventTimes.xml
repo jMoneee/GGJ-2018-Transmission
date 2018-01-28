@@ -1,9 +1,18 @@
 <?xml version="1.0"?>
 <EventTimes>
 	<time>
+		<time>
 		4.9
+		</time>
 	</time>
 	<time>
-		4
+		<time>
+		4.5
+		</time>
+	</time>
+	<time>
+		<time>
+		4.0
+		</time>
 	</time>
 </EventTimes>
