@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DialogueSet>
+  <scene><scene>
+	<!--Director1-->
+	Hello. Congratulations on your position.Good luck. Don't get curious. Mind your business, be efficient, and do what you are told, and you won't end up like the last broad we had running the switch board. ~ *CLICK*
+  </scene></scene>
+  <scene><scene>
+    <!--Aleksi-Eng-->
+    Allo, this is aleksi. ~
+    Hey, boss. How's your morning? ~
+    Fine. And yours? ~
+    Well, worked late yesterday, so it's been a little rough. Wife's been havin' trouble sleepin' with the baby on the way, you know. It's funny, with the first one, she ain't even- ~
+    That's enough. ~
+    Yessir. ~
+    Did you get the blueprint from yesterday's review? ~
+    Yes sir, got 'em right here. You make these changes? Pretty impressive stuff. Coolin' chambers sure'll change things. ~
+    Implement these changes as soon as possible. I will be checking in on progress soon. Bye. ~
+  </scene></scene>
+  <scene><scene>
+    <!--Secretary-Govt-->
+    Hi <b>James</b>, there's someone at the front desk for you. Says he's with Project Charlie.~
+    Send him to my office. Thanks, Jane.~
+    No trouble at all.~
+  </scene></scene>
+  <scene><scene>
+    <!--Dr. F-Physicist-->
+    Hallo. ~
+    Hey doc. Checking in? ~
+    Ja. Checking in for today. How is it going along? Will you have the calculations by the time we projected? ~
+    Sure thing doc. You coming down today? ~
+    Yes. I plan on observing materials tests myself. It will be... interesting to see how the Uranium responds when exposed to these new forces. ~
+    Yeah, I'm sure it'll be exciting. See you around. ~
+    Ja. Auf Wiedersehen. ~
+  </scene></scene>
+  <scene><scene>
+    <!--Testing-Remote-->
+    CC-00A, This is Testing Coordinator Alpha. Systems are go for today's preliminary testing. Awaiting go from engineering and Government. ~
+    This is CC-00A. Status acknowledged. ... ~
+    ... ~
+    Are you, uh... ~
+    No, I'm not busy. ~
+    Yeah, I, uh.... ~
+    .... ~
+    .... ~
+    Supply closet, 10 minutes. ~
+    Oh my god, I'm so ready. See you soon. ~
+  </scene></scene>
+  <scene><scene>
+    <!--Engineering-Secretary-->
+    Yes? ~
+    Hey, Jane. I know the policy on guests is extremely strict, but my wife is coming by at around- ~
+    I'll let her in. ~
+    Really? Are you sure? I don't want you gettin' in bad... ~
+    It's fine. ~
+    Well, you don't have to let her in, just grab the lunch she's droppin' off for me, will you? ~
+    Whatever you need. ~
+    Thank you kindly, Jane. My stomach and heart thank you. ~
+    No problem. ~
+    ... ~
+    ... yes? ~
+    Actually, I had a question... ~
+    *sigh*. Yes? What is it? ~
+    So Aleksi... Do you trust him? ~
+    No, not at all. ~
+    Well, I mean, I ain't so much untrusting of him as I am suspicious. I mean, I heard he defected just for this project! That doesn't sound suspicious to you? ~
+    It does. He's a Soviet. I don't trust him. ~
+    Yeah, I mean, he's my boss, and he got a lot done for us... ~
+    He's probably hiding sabotage in his blueprints. ~
+    Yeah... maybe. ~
+    Mhmm. ~
+    Alright, thanks Jane.~
+  </scene></scene>
+  <scene><scene>
+    <!--Chief-Govt-->
+    Hello sir. ~
+    Hello. ~
+    We're trying to figure out if we need confirmation for testing later, do we need executive clearance? ~
+    No, you have full control. If you'd like to notify local officials, I can do that. ~
+    Hm, alright. I'll let you know. Thanks. ~
+    Sure thing! ~
+  </scene></scene>
+  <scene><scene>
+    <!--dr. F-Aleksi-->
+    Hello, Aleksi. ~
+    Hello. How are you today, Doctor? ~
+    Very good. Und you?~
+    Ah, good. So I've heard you've made some changes to the weapon? ~
+    Ja, changing the coolant system will hopefully increase the payload output. Actually, Aleksi, have you and your team run the calculations on the weight balance?~
+    Yes. It's been very intriguing. Your design philosophies are fascinating. Where did you study, if you do not mind me asking? ~
+    Oh, not at all. I studied in Berlin, under professor Wilhelm. ~
+    Incredible. I myself went straight into engineering work for the soviet army. Did you... ~
+    Nein. I had no time on the battlefield, thank gott. I was... unwilling to support the government. It's how I ended up here.~
+    Ah, I served for Stalin, until the war was over. In the cavalry. ~
+    I'm sorry. But now we are both here, yes? Working together. ~
+    Yes.~ 
+    Ja.~
+    Well I'd better get back to work. Goodbye, Doctor. ~
+    Auf Wiederesen. ~
+  </scene></scene>
+  <scene><scene>
+    <!--Secretary calls chief-->
+    Hi chief. Just wanted to let you know that Charles in engineering has asked me to illegally let his wife in to drop off his lunch. ~
+    Well, That certainly isn't allowed, but I'm sure he means no harm. I will talk to him. Thanks for letting me know, jane. ~
+    Mhmm. ~
+  </scene></scene>
+  <scene><scene>
+    <!--DIRECTOR 2-->
+    Director Dialogue which will change by variables eventually
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+  <scene><scene>
+    <!---->
+  </scene></scene>
+</DialogueSet>

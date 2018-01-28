@@ -17,7 +17,7 @@ public class TimeLine : MonoBehaviour {
 	int timeIndex;
 	float timeLeft;
 	List<float> eventTime;
-	List<string> testDialogue;
+	List<string> dialogues;
 	CableConnections connect;
 
 	void Start()
@@ -27,9 +27,9 @@ public class TimeLine : MonoBehaviour {
 		eventTime = xmlReader.readEventTime ();
 
 		connect = GameObject.FindGameObjectWithTag ("GameController").GetComponent<CableConnections>();
-		testDialogue = xmlReader.readDialogue ("DialogueFormat");/*
-		display.Display (testDialogue[1]);
-		*/
+		dialogues = xmlReader.readDialogue ("Event Dialogue");
+		display.Display (dialogues[2]);
+
 
 		for (int x = 0; x < 4; x++) {
 			openSwitches[x] = openParent.transform.GetChild (x).gameObject.GetComponent<FlipSwitch>();
@@ -39,7 +39,7 @@ public class TimeLine : MonoBehaviour {
 	void Update()
 	{
 		timeLeft -= Time.deltaTime;
-		checkTime ();
+		//checkTime ();
 	}
 
 	void checkTime()
@@ -69,7 +69,7 @@ public class TimeLine : MonoBehaviour {
 	void Answer()
 	{
 		StopAllCoroutines ();
-		display.Display (testDialogue [0]);
+		display.Display (dialogues [0]);
 		StartCoroutine (waitConnect(0, 3));
 	}
 
@@ -78,6 +78,6 @@ public class TimeLine : MonoBehaviour {
 		while (connect.cableOccupy [cable] == false && connect.areaOccupy [cable] == false) {
 			yield return null;
 		}
-		display.Display (testDialogue [1]);
+		display.Display (dialogues [1]);
 	}
 }
