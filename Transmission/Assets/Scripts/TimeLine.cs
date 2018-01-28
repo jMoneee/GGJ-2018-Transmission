@@ -11,19 +11,29 @@ public class TimeLine : MonoBehaviour {
 	public DisplayText display;
 	public XMLReader xmlReader;
 	public float callTimeSeconds;
+	public GameObject openParent;
 
+	FlipSwitch[] openSwitches = new FlipSwitch[4];
 	int timeIndex;
 	float timeLeft;
 	List<float> eventTime;
 	List<string> testDialogue;
+	CableConnections connect;
 
 	void Start()
 	{
 		timeLeft = minutes * 60;
 		timeIndex = 0;
 		eventTime = xmlReader.readEventTime ();
-		testDialogue = xmlReader.readDialogue ("DialogueFormat");
+
+		connect = GameObject.FindGameObjectWithTag ("GameController").GetComponent<CableConnections>();
+		testDialogue = xmlReader.readDialogue ("DialogueFormat");/*
 		display.Display (testDialogue[1]);
+		*/
+
+		for (int x = 0; x < 4; x++) {
+			openSwitches[x] = openParent.transform.GetChild (x).gameObject.GetComponent<FlipSwitch>();
+		}
 	}
 
 	void Update()
@@ -35,19 +45,39 @@ public class TimeLine : MonoBehaviour {
 	void checkTime()
 	{
 		if (timeLeft < eventTime [timeIndex] * 60) {
-			StartCoroutine (Call());
+			StartCoroutine (Call(0));
 			if (timeIndex < eventTime.Count) {
 				timeIndex++;
 			}
 		}
 	}
 
-	IEnumerator Call(){
+	IEnumerator Call(int index){
 		float time = callTimeSeconds;
 		while (time > 0) {
-			Debug.Log ("Ring" + time);
+			display.Display ("RING RING RING RING RING RING RING RING");
+			if (openSwitches[index].state == 1) {
+				Answer ();
+			}
 			time -= 1;
 			yield return new WaitForSeconds(1);
 		}
+		StopAllCoroutines ();
+		display.RemoveText ();
+	}
+
+	void Answer()
+	{
+		StopAllCoroutines ();
+		display.Display (testDialogue [0]);
+		StartCoroutine (waitConnect(0, 3));
+	}
+
+	IEnumerator waitConnect(int cable, int area)
+	{
+		while (connect.cableOccupy [cable] == false && connect.areaOccupy [cable] == false) {
+			yield return null;
+		}
+		display.Display (testDialogue [1]);
 	}
 }
